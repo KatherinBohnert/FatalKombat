@@ -1,0 +1,193 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1C1B1B;
+    color: #FDEED8;
+}
+
+header {
+    background-color: #AE8157;
+    color: #FDEED8;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #FDEED8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    position: relative;
+    background-image: url('assets/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #FDEED8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero .hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    background-color: #FDEED8;
+    color: #1C1B1B;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #8C6439;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-us, .careers, .testimonials {
+    text-align: center;
+}
+
+.about-us h2, .featured-games h2, .news-updates h2, .careers h2, .testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.games {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.game {
+    background-color: #AE8157;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    width: 45%;
+}
+
+.game img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.news-updates article {
+    background-color: #AE8157;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.careers .btn {
+    background-color: #FDEED8;
+    color: #1C1B1B;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.careers .btn:hover {
+    background-color: #8C6439;
+}
+
+footer {
+    background-color: #1C1B1B;
+    color: #FDEED8;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+}
+
+footer .social-icons img {
+    height: 30px;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .games {
+        flex-direction: column;
+    }
+
+    .game {
+        width: 90%;
+    }
+}
